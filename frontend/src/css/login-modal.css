@@ -1,0 +1,339 @@
+/* ================= BEAUTIFIED ELEMENT INJECTIONS ================= */
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #64748b;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  text-align: center;
+}
+
+#loginTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+  text-align: center;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0 0 10px 0;
+  text-align: center; 
+
+
+  width: 100%;
+  max-width: 400px;       /* Prevents the text line from looking too wide */
+  margin: 0 auto 24px auto; /* Centers the text block container itself */
+  
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Social Provider Button Stacks Layout */
+.social-login-grid {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  margin-bottom: 10px;
+
+  flex-direction: row;     /* Forces them into a row */
+  justify-content: center; /* Centers them horizontally */
+  align-items: center;
+  gap: 16px;               /* Clean spacing between circles */
+  width: 100%;
+}
+
+.social-provider-btn {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 0px solid #e2e8f0; 
+  /* border-radius: 30px; */
+  /* padding: 3px 1px; */
+  /* font-size: 13px; */
+  /* font-weight: 600; */
+  /* color: #1e293b; */
+  cursor: pointer;
+  /* box-shadow: 0 2px 4px rgb(255, 255, 255); */
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-provider-btn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.social-icon-svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+/* Horizontal Mid Divider Grid */
+.modal-divider-row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* margin-bottom: 10px; */
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.modal-divider-row::before,
+.modal-divider-row::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-divider-row span {
+  padding: 0 12px;
+}
+
+/* Segmented Control Navigation Tabs Wrapper */
+.login-tabs {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 14px;
+  padding: 4px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.login-tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.login-tab.active {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Pure Form Input Formatting Blocks */
+.input-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 6px; */
+  /* margin-bottom: 16px; */
+  text-align: left;
+}
+
+.input-field-wrapper label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.password-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.forgot-password-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.input-field-wrapper input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field-wrapper input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* Blue Master Submission Interface Trigger */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(180deg, #1e40af 0%, #1e3a8a 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(30, 64, 175, 0.3);
+  margin-top: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
+  transform: translateY(-1px);
+}
+
+.create-line {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+.create-line a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.create-line a:hover {
+  text-decoration: underline;
+}
+
+/* ================= BLUE PEARL MODERN LOGIN MODAL SYSTEM copied from style.css================= */
+
+.login-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 999;
+}
+
+.login-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 18, 26, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.book-stage {
+  position: relative;
+  width: min(92vw, 620px);
+  max-width: 520px;
+  height: min(84vh, 640px);
+  perspective: 1800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.book {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(14deg) scale(1.1);
+  transition: transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.login-modal.show .book {
+  transform: rotateY(0deg) scale(1);
+}
+
+
+.book-page {
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+  
+
+  background: #fbfbff;
+  transform-origin: left;
+  transform: rotateY(-160deg);
+  transition: transform 0.75s ease 0.05s;
+  padding: 36px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.book-cover {
+  background: linear-gradient(180deg, #1d2146 0%, #312e64 100%);
+  transform-origin: left;
+  transform: rotateY(-170deg);
+  transition: transform 0.75s ease;
+}
+
+.login-modal.show .book-cover {
+  transform: rotateY(-20deg);
+}
+
+.book-cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.07), transparent 35%),
+              linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 35%);
+}
+
+/* .book-page {
+  background: #fbfbff;
+  transform-origin: left;
+  transform: rotateY(-160deg);
+  transition: transform 0.75s ease 0.05s;
+  padding: 36px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+} */
+
+.login-modal.show .book-page {
+  transform: rotateY(0deg);
+}
+
+.close-modal {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  color: #3a3855;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.close-modal:hover {
+  transform: scale(1.04);
+  background: #fff;
+}

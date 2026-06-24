@@ -1,0 +1,95 @@
+/* Hide registration form layer by default */
+.registration-page {
+  opacity: 0;
+  pointer-events: none;
+  transform: rotateY(30deg) scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  background: #ffffff;
+  z-index: 2;
+}
+
+/* Layer visible state triggers */
+.login-modal.show-registration #loginPage {
+  opacity: 0;
+  pointer-events: none;
+  transform: rotateY(-30deg) scale(0.95);
+}
+
+.login-modal.show-registration #registerPage {
+  opacity: 1;
+  pointer-events: auto;
+  transform: rotateY(0deg) scale(1);
+}
+
+/* Compact Scroll Layout Controls */
+.compact-header {
+  margin-bottom: 14px;
+}
+.compact-header h2 {
+  font-size: 22px !important;
+  margin-bottom: 2px !important;
+}
+.compact-header .subtext {
+  margin-bottom: 0px !important;
+}
+
+.reg-form-scrollable {
+  max-height: calc(84vh - 160px);
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-bottom: 10px;
+}
+
+/* Custom Scrollbar for modern look */
+.reg-form-scrollable::-webkit-scrollbar {
+  width: 5px;
+}
+.reg-form-scrollable::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* Split Column Form Grids Layout Matrix */
+.form-row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Side-by-Side Flex Layout Row for Country Code + Phone Inputs */
+.inline-phone-combo {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.country-code-dropdown {
+  width: 95px !important;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/* Custom Uniform Select Dropdowns styling inside the book-page */
+.book-page select {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.book-page select:focus {
+  border-color: #1e40af;
+}
+
+.reg-submit-trigger {
+  margin-top: 15px !important;
+  background: linear-gradient(180deg, #059669 0%, #047857 100%) !important;
+  box-shadow: 0 4px 14px rgba(4, 120, 87, 0.25) !important;
+}
+.reg-submit-trigger:hover {
+  box-shadow: 0 6px 20px rgba(4, 120, 87, 0.35) !important;
+}

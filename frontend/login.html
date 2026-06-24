@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — Blue Pearl</title>
+  <meta name="description" content="Sign in to Blue Pearl via Google, Social ID, or email/password.">
+  <link rel="canonical" href="/pages/login.html">
+  <meta property="og:title" content="Login — Blue Pearl">
+  <meta property="og:description" content="Sign in to Blue Pearl via Google, Social ID, or email/password.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/pages/login.html">
+  <meta property="og:image" content="/assets/og-login.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="/assets/og-login.png">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Blue Pearl Login",
+    "description": "Sign in to Blue Pearl via Google, Social ID, or email/password.",
+    "image": "/assets/og-login.png"
+  }
+  </script>
+  <meta name="twitter:title" content="Login — Blue Pearl">
+  <meta name="twitter:description" content="Sign in to Blue Pearl via Google, Social ID, or email/password.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="site-nav">
+      <div class="nav-left"><img src="../assets/bp_logo.png" alt="Logo" class="logo"><span class="brand">Blue Pearl</span></div>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="info-security.html">Information Security</a></li><li><a href="webinars.html">Webinars</a></li></ul>
+      <div class="nav-actions"><a class="cta-btn" href="webinars.html">Enroll</a></div>
+    </nav>
+
+    <main>
+      <section class="page-section">
+        <div class="section-inner">
+          <h2>Login to Blue Pearl</h2>
+          <p>Use Google, Social ID, or email/password to sign in.</p>
+          <div class="panel">
+            <button class="social-btn google">Continue with Google</button>
+            <button class="social-btn">Continue with Social ID</button>
+            <form id="loginPageForm">
+              <label>Email<input id="loginEmailInput" type="email" placeholder="you@example.com"></label>
+              <label>Password<input id="loginPassInput" type="password" placeholder="••••••"></label>
+              <button type="submit" class="submit-btn">Sign in</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/main.js"></script>
+</body>
+</html>

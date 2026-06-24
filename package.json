@@ -1,0 +1,11 @@
+{
+  "name": "blue-pearl-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "convert-og": "node scripts/convert-og.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.32.0"
+  }
+}

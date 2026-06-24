@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Webinars — Blue Pearl</title>
+  <meta name="description" content="Create, publish, and manage Blue Pearl webinars with secure registration, RSVP tracking, and automated webinar-link delivery.">
+  <link rel="canonical" href="/pages/webinars.html">
+  <meta property="og:title" content="Webinars — Blue Pearl">
+  <meta property="og:description" content="Create, publish, and manage Blue Pearl webinars with secure registration, RSVP tracking, and automated webinar-link delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/pages/webinars.html">
+  <meta property="og:image" content="/assets/og-webinars.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="/assets/og-webinars.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Blue Pearl Webinars",
+    "description": "Create, publish, and manage Blue Pearl webinars with secure registration and RSVP tracking.",
+    "image": "/assets/og-webinars.png",
+    "organizer": {"@type":"Organization","name":"Blue Pearl"}
+  }
+  </script>
+  <meta name="twitter:title" content="Webinars — Blue Pearl">
+  <meta name="twitter:description" content="Create, publish, and manage Blue Pearl webinars with secure registration, RSVP tracking, and automated webinar-link delivery.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="site-nav">
+      <div class="nav-left"><img src="../assets/bp_logo.png" alt="Logo" class="logo"><span class="brand">Blue Pearl</span></div>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="info-security.html">Information Security</a></li><li><a href="quality.html">Quality</a></li><li><a href="design.html">Design</a></li><li><a href="ai.html">AI Governance</a></li><li><a href="webinars.html">Webinars</a></li></ul>
+      <div class="nav-actions"><a class="cta-btn" href="webinars.html">Enroll</a><a class="login-btn" href="login.html">Login</a></div>
+    </nav>
+
+    <main>
+      <header class="hero"><div class="hero-inner"><div class="hero-copy"><p class="eyebrow">Webinars</p><h1>Create, publish, and manage training webinars.</h1><p class="lead">Host free Blue Pearl sessions with secure registration, RSVP tracking, and automated webinar-link delivery.</p></div></div></header>
+
+      <section class="page-section webinars">
+        <div class="section-inner two-col">
+          <div class="panel">
+            <h3>Create Webinar</h3>
+            <form id="createWebinar">
+              <label>Title<input name="title" required></label>
+              <label>Information<textarea name="info"></textarea></label>
+              <label>Date<input type="date" name="date"></label>
+              <label>Time<input type="time" name="time"></label>
+              <label>Link<input name="link"></label>
+              <label>Speaker<input name="speaker"></label>
+              <label>Status<select name="status"><option>Draft</option><option>Published</option></select></label>
+              <button type="submit" class="submit-btn">Save Webinar</button>
+            </form>
+          </div>
+          <div class="panel">
+            <h3>Register / RSVP</h3>
+            <form id="registerForm">
+              <label>Name<input name="name" required></label>
+              <label>Email<input type="email" name="email" required></label>
+              <label>Company<input name="company"></label>
+              <label>Role<input name="role"></label>
+              <label>RSVP<select name="rsvp"><option>Attend</option><option>Maybe</option><option>Not attending</option></select></label>
+              <label>Notes<textarea name="notes"></textarea></label>
+              <button type="submit" class="submit-btn">Register Free</button>
+            </form>
+
+            <div class="upcoming-card card"><h4>Upcoming webinar</h4><p class="meta">No webinars yet — create one from the left.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer"><div class="footer-inner"><div>© Blue Pearl</div><div class="footer-links"><a href="index.html">Home</a><a href="login.html">Login</a></div></div></footer>
+    </main>
+  </div>
+
+  <script type="module" src="../scripts/main.js"></script>
+</body>
+</html>

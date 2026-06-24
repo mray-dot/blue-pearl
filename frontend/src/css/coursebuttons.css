@@ -1,0 +1,72 @@
+/* --- Course Selection Row Wrapper --- */
+.course-selection-header {
+  padding: 16px 20px 12px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(5, 4, 49, 0.829);
+  margin-bottom: 10px;
+}
+
+.selection-label {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #6aa0f1; /* Slate muted label text */
+  font-weight: 700;
+}
+
+/* Flexbox wrap container to align buttons elegantly */
+.course-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* --- High-Quality Interactive Glass Pill Buttons --- */
+.course-select-btn {
+  background: rgba(247, 244, 244, 0.03);
+    border:  rgba(95, 97, 177, 0.699);
+  color: #cc399b;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Micro SVG inline icon alignment sizing */
+.course-select-btn .btn-icon {
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
+  transition: transform 0.2s ease;
+}
+
+/* --- Hover State Styling --- */
+.course-select-btn:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(12, 115, 160, 0.3); /* Cyan hint on hover */
+  color: #b6a9b0;
+}
+
+.course-select-btn:hover .btn-icon {
+  transform: scale(1.08);
+}
+
+/* --- Active/Selected State Styling --- */
+.course-select-btn.active {
+  background: rgba(56, 189, 248, 0.1); /* Transparent neon backdrop */
+  border-color: #0b77a5;               /* Glowing Cyan Border line */
+  color: #cc399b;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+}
+
+.course-select-btn.active .btn-icon {
+  color: #38bdf8;
+  opacity: 1;
+}

@@ -1,0 +1,360 @@
+/* --- Master Component Isolation Scope Styles --- */
+  .bp-campaign-section {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: transparent; /* Seamlessly inherits your page container dark gradient */
+  }
+
+  .bp-campaign-section *,
+  .bp-campaign-section *::before,
+  .bp-campaign-section *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+  }
+
+  .bp-campaign-container {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* --- Text Typography Configurations --- */
+  .bp-campaign-main-title {
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #0c0b2e;
+    margin: 0 0 24px 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+
+  .bp-highlight-orange {
+    color: #f97316;
+    text-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+  }
+
+  .bp-campaign-sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 45px;
+  }
+
+  .bp-header-side {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2f4563;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .bp-header-divider {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  }
+
+  /* --- Comparison Graphic Row Grid --- */
+  .bp-comparison-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .bp-visual-card {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    /* border: 1px solid rgb(253, 253, 253); */
+    border-radius: 24px;
+    padding: 30px 24px 24px 24px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  .bp-visual-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .bp-left-tilt { border-color: rgba(239, 68, 68, 0.15); }
+  .bp-right-tilt { border-color: rgba(56, 189, 248, 0.15); }
+
+  .bp-badge-tag {
+    position: absolute;
+    top: -12px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    border-radius: 12px;
+  }
+
+  .bp-tag-red { background: #ef4444; color: #ffffff; box-shadow: 0 0 15px rgba(239, 68, 68, 0.3); }
+  .bp-tag-cyan { background: #00f2fe; color: #0f172a; font-weight: 800; box-shadow: 0 0 15px rgba(0, 242, 254, 0.3); }
+
+  .bp-illustration-frame {
+    width: 100%;
+    height: 190px;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid rgba(255, 255, 255, 0.02); */
+  }
+
+  .bp-glow-blue {
+    border-color: rgba(56, 189, 248, 0.2);
+  }
+
+  /* Fixed Background Circle for Right Graphic Balance */
+  .bp-illustration-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .bp-marketing-img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.4));
+    z-index: 2;
+  }
+
+  .bp-price-tag-bubble {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 3;
+  }
+
+  .bp-bubble-cyan {
+    background: #38bdf8;
+    color: #0f172a;
+  }
+
+  .bp-card-flavor-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #64748b;
+    text-align: center;
+    margin: 16px 0 0 0;
+  }
+
+  /* --- Center Brand Core Seal --- */
+  .bp-center-seal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .bp-core-sphere-logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb 0%, #00f2fe 100%);
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.35), inset -3px -3px 8px rgba(0,0,0,0.4);
+    position: relative;
+  }
+
+  .bp-inner-sphere-reflection {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 16px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    transform: rotate(-15deg);
+  }
+
+  .bp-brand-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #64748b;
+    text-transform: uppercase;
+  }
+
+  /* --- Hardcover Book Structure --- */
+  .bp-book-mockup {
+    width: 90px;
+    height: 125px;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 4px 10px 10px 4px;
+    border: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    box-shadow: 8px 10px 20px rgba(0,0,0,0.5);
+    z-index: 2;
+  }
+
+  .bp-book-spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .bp-book-cover-content {
+    padding: 14px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bp-book-logo {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #38bdf8;
+    box-shadow: 0 0 8px #38bdf8;
+  }
+
+  .bp-book-chart-vector {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 35px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bp-bar-line {
+    width: 5px;
+    background: linear-gradient(to top, #2563eb, #38bdf8);
+    border-radius: 1px;
+  }
+
+  .bp-book-title-text {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #475569;
+    letter-spacing: 0.5px;
+  }
+
+  /* ================= BOTTOM VALUE PITCH PANEL FOOTER ================= */
+  .bp-value-pitch-footer {
+    width: 100%;
+    background: rgba(4, 27, 82, 0.938);
+    border: 1px solid rgba(56, 189, 248, 0.12);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+
+  .bp-pitch-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: 0.5px;
+  }
+
+  .bp-pitch-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin: 0 0 24px 0;
+  }
+
+  .bp-action-center-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* --- Shimmering CTA Action Button --- */
+  .bp-premium-enroll-cta {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ea580c 0%, #f97316 100%);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .bp-premium-enroll-cta:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(249, 115, 22, 0.6);
+  }
+
+  .bp-cta-shimmer {
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 30%;
+    height: 200%;
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.25) 50%, transparent 100%);
+    transform: rotate(30deg);
+    animation: bpShineLoop 4s infinite linear;
+  }
+
+  @keyframes bpShineLoop {
+    0% { left: -60%; }
+    30%, 100% { left: 140%; }
+  }
+
+  @media (max-width: 768px) {
+    .bp-comparison-grid { flex-direction: column; gap: 30px; }
+    .bp-center-seal-wrapper { transform: rotate(90deg); margin: 10px 0; }
+    .bp-campaign-sub-header { flex-direction: column; gap: 12px; }
+  }

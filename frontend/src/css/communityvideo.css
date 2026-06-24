@@ -1,0 +1,230 @@
+.bp-showcase-section-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    box-sizing: border-box;
+    /* Uses a rich dark backdrop if your master body canvas is transparent */
+    background-color: #f4f5f802; 
+  }
+
+  .bp-showcase-section-wrapper *, 
+  .bp-showcase-section-wrapper *::before, 
+  .bp-showcase-section-wrapper *::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+  }
+
+  /* Compact Dashboard Architecture */
+  .bp-dashboard-container {
+    width: 100%;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 36px;
+    align-items: stretch;
+    padding: 0 24px;
+  }
+
+  .bp-column-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #081425;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  /* ================= LEFT COLUMN: GLASS VIDEO SHOWCASE ================= */
+  .bp-video-showcase-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(218, 220, 226, 0);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 20px;
+    padding: 24px 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.05);
+  }
+
+  .bp-scroll-arrow {
+    background: rgba(56, 189, 248, 0.05);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    margin: 2px 0;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.1);
+  }
+
+  .bp-scroll-arrow:hover {
+    background: rgba(56, 189, 248, 0.15);
+    border-color: #38bdf8;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+  }
+
+  .bp-video-column {
+    width: 100%;
+    height: 360px; /* Secure bounds to wrap elements precisely */
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 4px 0;
+    scroll-behavior: smooth;
+  }
+
+  .bp-video-frame {
+    position: relative;
+    width: 100%;
+    height: 112px;
+    min-height: 112px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(56, 189, 248, 0.25);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bp-video-frame:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    transform: translateY(-1px);
+  }
+
+  /* High Definition Visual Cover Thumbs */
+  .bp-vid-1 { background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=500'); }
+  .bp-vid-2 { background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=500'); }
+  .bp-vid-3 { background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=500'); }
+
+  .bp-play-btn {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 24px;
+    height: 24px;
+    background: rgba(56, 189, 248, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+  }
+
+  .bp-video-info {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .bp-video-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    max-width: 75%;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+
+  .bp-video-duration {
+    font-size: 10px;
+    color: #94a3b8;
+    font-weight: 600;
+  }
+
+  /* ================= RIGHT COLUMN: GLASS STORIES TESTIMONIAL ================= */
+  .bp-stories-panel-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bp-stories-card-panel {
+    background: rgba(244, 245, 248, 0.027);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.05);
+  }
+
+  /* Glass Outer Frame Ring mapping the active design image layout */
+  .bp-profile-glow-frame {
+    width: 260px;
+    height: 220px;
+    border-radius: 24px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1.0px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bp-profile-square-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .bp-message-icon {
+    color: #12a6e6;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+    margin-bottom: 20px;
+    animation: bpNeonBlink 3s infinite ease-in-out;
+  }
+
+  .bp-testimonial-quote {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #091729;
+    text-align: center;
+    margin: 0;
+    max-width: 380px;
+
+    /* animation: bpNeonBlink 3s infinite ease-in-out; */
+  }
+
+  /* Smoothly pulses the text opacity to look like a blinking terminal/display */
+@keyframes bpNeonBlink {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.3));
+  }
+  50% {
+    opacity: 0.4;
+    filter: drop-shadow(0 0 0px transparent);
+  }
+}
