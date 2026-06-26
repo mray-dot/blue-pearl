@@ -1,0 +1,45 @@
+/* Profile Dropdown */
+.nav-actions {
+  position: relative;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  min-width: 220px;
+  /* z-index: 1000; */
+  padding: 8px 0;
+  margin-top: 24px;
+
+  z-index: 99999 !important;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-dropdown a:hover {
+  background: #f0f7ff;
+  color: #0066cc;
+}
+
+.profile-dropdown hr {
+  margin: 6px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Make Login button look better when it's Profile */
+.login-btn.profile-btn {
+  background: #0066cc;
+  color: white;
+}
